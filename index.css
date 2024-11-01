@@ -1,12 +1,12 @@
 body {
     margin: 0;
-    padding-top: 60px;
+    padding-top: 4rem;
     box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 30px;
+    row-gap: 2rem;
 
     background: #000;
     color: #fff;
@@ -24,10 +24,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 10px;
+    row-gap: 1rem;
 
     text-align: center;
-    font-size: 70px;
+    font-size: 4.5rem;
     font-weight: bold;
 }
 
@@ -73,34 +73,38 @@ body {
 }
 
 .cardWide {
-    height: 300px;
-    width: 600px;
+    height: 20rem;
+    width: 40rem;
     max-width: 100vw;
     max-height: 50vw;
 }
 
-.cardWideTitle {
-    margin-bottom: 15px;
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-}
-
 .cardSquare {
-    height: 300px;
-    width: 300px;
+    height: 20rem;
+    width: 20rem;
     max-width: 100vw;
     max-height: 100vw;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
-.cardSquareTitle {
-    margin-top: 15px;
-    color: #888;
-    font-size: 24px;
+.cardSquare>img {
+    max-width: 12rem;
+}
+
+.cardTitle {
+    font-family: Bahnschrift-VF, Bahnschrift, sans-serif;
     text-align: center;
-    /* font-family: Bahnschrift-VF; */
+}
+
+.cardWide>.cardTitle {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.cardSquare>.cardTitle {
+    margin-top: 1rem;
+    color: #888;
+    font-size: 2rem;
 }
 
 /* -------------------------------- */
@@ -108,8 +112,8 @@ body {
 .footer {
     width: 100%;
     background: #494949;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 
     display: flex;
     flex-direction: row;
@@ -119,7 +123,14 @@ body {
 }
 
 .footer>a {
+    margin: 0 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
     color: unset;
-    margin: 0 20px;
     text-decoration: none;
 }

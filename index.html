@@ -12,7 +12,7 @@
 <body>
     <div class="title">
         <a style="display: flex;" href="https://space.bilibili.com/25876945/">
-            <img style="width: 130px;" src="icon-gkw.png" alt="极客湾">
+            <img style="width: 10rem;" src="icon-gkw.png" alt="极客湾">
         </a>
         移动芯片排行
     </div>
@@ -20,12 +20,12 @@
     <div class="cardContainer">
         <a class="card cardWide" href="cpucurve/gb6">
             <img src="curve-phone-cpu.png" alt="手机CPU能效曲线">
-            <div class="cardWideTitle" style="color:default; font-weight: normal; color: #888;">(Geekbench6)</div>
+            <div class="cardTitle" style="color:default; font-weight: normal; color: #888;">(Geekbench6)</div>
         </a>
 
         <a class="card cardWide" href="cpucurve">
             <img src="curve-phone-cpu.png" alt="手机CPU能效曲线">
-            <div class="cardWideTitle" style="color:default; font-weight: normal; color: #888;">(Geekbench5)</div>
+            <div class="cardTitle" style="color:default; font-weight: normal; color: #888;">(Geekbench5)</div>
         </a>
 
         <a class="card cardWide" href="gpucurve">
@@ -44,22 +44,22 @@
 
     <div class="cardContainer">
         <a class="card cardWide" href="allperf">
-            <div class="cardWideTitle" style="color:#1DE7E1;">综合性能排行</div>
+            <div class="cardTitle" style="color:#1DE7E1;">综合性能排行</div>
             <img src="rank-total-score.png">
         </a>
 
         <a class="card cardWide" href="cpu">
-            <div class="cardWideTitle" style="color:#10B3F8;">CPU性能排行</div>
+            <div class="cardTitle" style="color:#10B3F8;">CPU性能排行</div>
             <img src="rank-cpu-score.png">
         </a>
 
         <a class="card cardWide" href="gpu">
-            <div class="cardWideTitle" style="color:#FFD101;">GPU性能排行</div>
+            <div class="cardTitle" style="color:#FFD101;">GPU性能排行</div>
             <img src="rank-gpu-score.png">
         </a>
 
         <a class="card cardWide" href="cpueffcrank">
-            <div class="cardWideTitle" style="color:#CA7578;">CPU能效排行</div>
+            <div class="cardTitle" style="color:#CA7578;">CPU能效排行</div>
             <img src="rank-cpu-eff.png">
         </a>
     </div>
@@ -67,39 +67,44 @@
     <div class="cardContainer">
         <a class="card cardSquare" href="geekbench6">
             <img src="icon-gb6.png">
-            <div class="cardSquareTitle">Geekbench 6</div>
+            <div class="cardTitle">Geekbench 6</div>
         </a>
 
         <a class="card cardSquare" href="geekbench5">
             <img src="icon-gb5.png">
-            <div class="cardSquareTitle">Geekbench 5</div>
+            <div class="cardTitle">Geekbench 5</div>
         </a>
 
         <a class="card cardSquare" href="gfx">
             <img src="icon-gfxbench.png">
-            <div class="cardSquareTitle">Aztec Ruins</div>
-
+            <div class="cardTitle">Aztec Ruins</div>
         </a>
 
         <a class="card cardSquare" href="3dmwle">
             <img src="icon-3dmark.png">
-            <div class="cardSquareTitle">Wildlife Extreme</div>
+            <div class="cardTitle">Wildlife Extreme</div>
         </a>
     </div>
 
     <div class="footer">
-        <a href="https://www.socpk.com">SOCPK源地址</a>
-        |
-        <a href="https://www.github.com/kqakqakqa/socpk">镜像地址</a>
-        |
+        <a href="https://www.socpk.com">SOCPK.com</a>
+        /
+        <a href="https://www.github.com/kqakqakqa/socpk">镜像仓库</a>
+        /
         <a href="log">更新日志</a>
         |
-        <a href="https://space.bilibili.com/25876945">极客湾Bilibili频道</a>
-        |
-        <a href="https://www.youtube.com/@geekerwan1024">YouTube频道</a>
-        |
-        <a href="https://m.tb.cn/h.515itVL?sm=bc166e">淘宝店</a>
-        |
+        <a href="https://space.bilibili.com/25876945">
+            <img src="icon-bilibili.svg" style="height: 1.125rem;" />
+        </a>
+        /
+        <a href="https://www.youtube.com/@geekerwan1024">
+            <img src="icon-youtube.svg" style="height: 1rem;" />
+        </a>
+        /
+        <a href="https://shop163196014.taobao.com">
+            <img src="icon-taobao.svg" style="height: 1rem;" />
+        </a>
+        /
         <a href="https://www.bilibili.com/video/BV1bm4y117ba">数字生命游戏</a>
     </div>
 
@@ -111,7 +116,7 @@
     var keyChar = "";
     document.onkeydown = event => {
         keyChar = (keyChar + "" + event.keyCode).slice(-24);
-        if (keyChar == "383840403739373966656665") {
+        if (keyChar === "383840403739373966656665") {
             alert("[滑稽]");
         }
     }; 
