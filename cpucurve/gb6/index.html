@@ -24,7 +24,6 @@
 		
 		<img class="layer" name="cpufigure" style="position:absolute;" id="cpue2400" src="layer/cpu/CPU_gb6_E2400.svg">
 		<img class="layer" name="cpufigure" style="position:absolute;" id="cputg3" src="layer/cpu/CPU_gb6_Tensor&#32;G3.svg">
-        <img class="layer" name="cpufigure" style="position:absolute;" id="cpud9400" src="layer/cpu/CPU_gb6_D9400.svg">
         <img class="layer" name="cpufigure" style="position:absolute;" id="cpud9300p" src="layer/cpu/CPU_gb6_D9300+.svg">
 		<img class="layer" name="cpufigure" style="position:absolute;" id="cpud9200p" src="layer/cpu/CPU_gb6_D9200+.svg">
 		<img class="layer" name="cpufigure" style="position:absolute;" id="cpud8300u" src="layer/cpu/CPU_gb6_D8300&#32;Ultra.svg">
@@ -39,6 +38,11 @@
 		<img class="layer" name="cpufigure" style="position:absolute;" id="cpuk9000s" src="layer/cpu/CPU_gb6_K9000S.svg">
 	    <img class="layer" name="cpufigure" style="position:absolute;" id="cpuk9000sl" src="layer/cpu/CPU_gb6_K9000SL.svg">
 		<img class="layer" name="cpufigure" style="position:absolute;" id="cpuk8000" src="layer/cpu/CPU_gb6_K8000.svg">
+		
+		<img class="layer" name="cpufigure" style="position:absolute;" id="cpud9400_8533" src="layer/cpu/CPU_gb6_D9400&#32;(8533).svg">
+        <img class="layer" name="cpufigure" style="position:absolute;" id="cpud9400_10667" src="layer/cpu/CPU_gb6_D9400&#32;(10667).svg">
+        <img class="layer" name="cpufigure" style="position:absolute;" id="cpus8e_8533"  src="layer/cpu/CPU_gb6_SD8&#32;Elite&#32;(8533).svg">
+        <img class="layer" name="cpufigure" style="position:absolute;" id="cpus8e_9600"  src="layer/cpu/CPU_gb6_SD8&#32;Elite&#32;(9600).svg">
         
 		
 </div>
@@ -60,20 +64,33 @@
 	<!--</button> -->
 	<hr style="width:90%;margin-right:10%">
 	<p style="color:white;font-size:30px;margin-bottom:3px">高通骁龙旗舰</p>
-	<button class="btnSwitch" name="cpu"  id="cpus8g3btn" style="border-color:#30f2f2 ;" onclick="ChangeView('cpus8g3')">
+		<button class="btnSwitch" name="cpu"  id="cpus8e_9600btn" style="border-color:#30f2f2 ;" onclick="ChangeView('cpus8e_9600')">
+		<b style="font-size: 20px;">8 Elite</b> 
+		<a class="btnModule">红魔10Pro+</a>
+		<br>
+		<a class="btnModule">LPDDR5X 9600 / 台积电3nm</a>
+	</button>
+	<button class="btnSwitch" name="cpu"  id="cpus8e_8533btn" style="border-color:#79f2f2 ;" onclick="ChangeView('cpus8e_8533')">
+		<b style="font-size: 20px;">8 Elite</b> 
+		<a class="btnModule">一加13</a>
+		<br>
+		<a class="btnModule">LPDDR5X 8533 / 台积电3nm</a>
+	</button> 
+
+	<button class="btnSwitch" name="cpu"  id="cpus8g3btn" style="border-color:#30d2f2 ;" onclick="ChangeView('cpus8g3')">
 		<b style="font-size: 20px;">8 Gen3</b> 
 		<a class="btnModule">小米14</a>
 		<br>
 		<a class="btnModule">LPDDR5X 8533 / 台积电4nm</a>
 	</button> 
-	<button class="btnSwitch" name="cpu"  id="cpus8g2btn" style="border-color:#79f2f2 ;" onclick="ChangeView('cpus8g2')">
+	<button class="btnSwitch" name="cpu"  id="cpus8g2btn" style="border-color:#79def2 ;" onclick="ChangeView('cpus8g2')">
 		<b style="font-size: 20px;">8 Gen2</b> 
 		<a class="btnModule">小米13</a>
 		<br>
 		<a class="btnModule">LPDDR5X 8533 / 台积电4nm</a>
 	</button> 
 
-	<button class="btnSwitch" name="cpu"  id="cpus8pbtn" style="border-color: #30d2f2;" onclick="ChangeView('cpus8p')">
+	<button class="btnSwitch" name="cpu"  id="cpus8pbtn" style="border-color: #30b2f2;" onclick="ChangeView('cpus8p')">
 		<b style="font-size: 20px;">8+</b>
 		<a class="btnModule">Moto X30 Pro</a>
 		<br>
@@ -85,7 +102,7 @@
 	<hr style="width:90%;margin-right:10%">
 
 <p style="color:white;font-size:30px;margin-bottom:3px">高通骁龙中/高端</p>
-	<button class="btnSwitch" name="cpu"  id="cpus7pg3btn" style="border-color: #79DEF2;" onclick="ChangeView('cpus7pg3')">
+	<button class="btnSwitch" name="cpu"  id="cpus7pg3btn" style="border-color: #79caf2;" onclick="ChangeView('cpus7pg3')">
 		<b style="font-size: 20px;">7+ Gen3</b>
 		<a class="btnModule">一加Ace 3V</a>
 		<br>
@@ -96,19 +113,26 @@
 
 	
 <p style="color:white;font-size:30px;margin:30px 0 3px 10px">联发科天玑旗舰</p>
-<button class="btnSwitch" name="cpu"  id="cpud9400btn" style="border-color: #F28D79;" onclick="ChangeView('cpud9400')">
+<button class="btnSwitch" name="cpu"  id="cpud9400_10667btn" style="border-color: #f25130;" onclick="ChangeView('cpud9400_10667')">
 		<b style="font-size: 20px;">9400</b>
 		<a class="btnModule">OPPO Find X8 Pro</a>
 		<br>
 		<a class="btnModule">LPDDR5X 10667 / 台积电3nm</a>
 	</button> 
-<button class="btnSwitch" name="cpu"  id="cpud9300pbtn" style="border-color: #F28D79;" onclick="ChangeView('cpud9300p')">
+<button class="btnSwitch" name="cpu"  id="cpud9400_8533btn" style="border-color: #f27979;" onclick="ChangeView('cpud9400_8533')">
+		<b style="font-size: 20px;">9400</b>
+		<a class="btnModule">VIVO X200 Pro</a>
+		<br>
+		<a class="btnModule">LPDDR5X 8533 / 台积电3nm</a>
+	</button> 
+
+<button class="btnSwitch" name="cpu"  id="cpud9300pbtn" style="border-color: #f2a179;" onclick="ChangeView('cpud9300p')">
 		<b style="font-size: 20px;">9300+</b>
 		<a class="btnModule">红米K70至尊版</a>
 		<br>
 		<a class="btnModule">LPDDR5X 8533 / 台积电4nm</a>
 	</button> 
-    <button class="btnSwitch" name="cpu"  id="cpud9200pbtn" style="border-color: #F2B679;" onclick="ChangeView('cpud9200p')">
+    <button class="btnSwitch" name="cpu"  id="cpud9200pbtn" style="border-color: #f29130;" onclick="ChangeView('cpud9200p')">
 		<b style="font-size: 20px;">9200+</b>
 		<a class="btnModule">红米K60至尊版</a>
 		<br>
@@ -116,7 +140,7 @@
 	</button> 
 	
 <p style="color:white;font-size:30px;margin:30px 0 3px 10px">联发科天玑高端</p>	
-	<button class="btnSwitch" name="cpu"  id="cpud8300ubtn" style="border-color: #E57A7B ;" onclick="ChangeView('cpud8300u')">
+	<button class="btnSwitch" name="cpu"  id="cpud8300ubtn" style="border-color: #f27130 ;" onclick="ChangeView('cpud8300u')">
 		<b style="font-size: 20px;">8300Ultra</b>
 		<a class="btnModule">红米K70E</a>
 		<br>
@@ -205,7 +229,7 @@
  	<hr style="width:90%;margin-right:10%">
     <p style="color:white;font-size:30px;margin:30px 0 3px 10px">谷歌Tensor</p>
 
-	<button class="btnSwitch"  name="cpu" id="cputg3btn" style="border-color: #30B1F2;" onclick="ChangeView('cputg3')">
+	<button class="btnSwitch"  name="cpu" id="cputg3btn" style="border-color: #30b1f2;" onclick="ChangeView('cputg3')">
 		<b style="font-size: 20px;">G3</b>
 		<a class="btnModule">Pixel 8 Pro</a>
 		<br>
