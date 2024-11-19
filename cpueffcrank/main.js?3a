@@ -87,7 +87,7 @@ function ShowBar(brand){
 			case 'all':
 			document.getElementById("btn1").style.backgroundColor='white';
 			document.getElementById("btn1").style.color='black';
-			DrawRatioNum(150,brand);
+			DrawRatioNum(200,brand);
 			
 			break;
 			
@@ -101,14 +101,14 @@ function ShowBar(brand){
 			case '高通':
 			document.getElementById("btn3").style.backgroundColor='#FF5E23';
 			document.getElementById("btn3").style.color='white';
-			DrawRatioNum(150,brand);
+			DrawRatioNum(200,brand);
 			break;
 			
 			
 			case '联发科':
 			document.getElementById("btn4").style.backgroundColor='#FB9D1A';
 			document.getElementById("btn4").style.color='white';
-			DrawRatioNum(150,brand);
+			DrawRatioNum(200,brand);
 			break;
 			
 			case '华为':
