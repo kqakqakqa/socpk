@@ -12,6 +12,14 @@ body {
     color: #fff;
 }
 
+a {
+    color: unset;
+}
+
+.imgLoaded+.imgAlt {
+    display: none;
+}
+
 /* @font-face {
     font-family: Bahnschrift-VF;
     src: url(/Bahnschrift-VF.ttf);
