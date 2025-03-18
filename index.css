@@ -6,10 +6,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 2rem;
 
   background: #000;
   color: #fff;
+}
+
+.bodyContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
 }
 
 a {
@@ -128,7 +134,7 @@ a {
 
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   flex-wrap: wrap;
   row-gap: 1.8rem;
 
@@ -150,20 +156,14 @@ a {
   color: #fff;
 }
 
-.site {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  column-gap: 1.2rem;
-}
-
 .projects {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 1.2rem;
+  row-gap: 1.2rem;
 }
 
 .projects>a {
@@ -179,6 +179,14 @@ a {
   background-color: rgba(127, 127, 127, 0.33);
 }
 
+.links {
+  display: flex;
+  column-gap: 3.6rem;
+  row-gap: 2.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .follow {
   display: flex;
   flex-direction: row;
@@ -186,4 +194,12 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 2.4rem;
+}
+
+.repo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 1.2rem;
 }
