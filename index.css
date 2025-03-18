@@ -168,9 +168,12 @@ a {
 
 .projects>a {
   height: 6rem;
+  max-height: calc(((100vw - 4rem) * 0.3 - 2rem - 1.2rem));
+  min-height: 2.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
   border: 1px solid #555;
+  box-sizing: border-box;
   border-radius: 3rem;
   transition: background-color 0.3s;
 }
@@ -194,12 +197,14 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 2.4rem;
+  row-gap: 1.2rem;
 }
 
 .repo {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 1.2rem;
 }
