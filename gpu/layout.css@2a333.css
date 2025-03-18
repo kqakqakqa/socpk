@@ -1,0 +1,167 @@
+#mainLayout{
+	background-image: url("../LOGO/gkwlogo.png");
+	max-width:1500px;
+	margin:0 auto;
+	background-attachment:fixed
+}
+
+@font-face {
+	font-family:font2;
+	src: url(https://www.socpk.com/fonts/Bahnschrift-VF.ttf);
+	
+}
+
+
+.data{
+	border-collapse: collapse;
+	text-align:center;
+	width:90%;
+}
+
+.socName{
+	width:200px;
+	text-align:right;
+	color:#BBBBBB;
+}
+
+.logo{
+	width:50px;
+}
+
+.logo img{
+	width:55px;
+	padding:0 8px;
+	vertical-align:middle;
+}
+
+
+.ratioBar {
+    width: 100%;
+    /* background: black; */
+}
+
+
+.ratio {
+    height: inherit;
+    border-radius: 0 20px 20px 0;
+    background: linear-gradient(to right, #F7981E , #FFD201);
+	animation-name: barAnmi;
+	animation-duration: 1s;
+	transition-timing-function: ease-in;
+	transition:0.5s;
+	text-align:right;	
+		font-family:font2;
+
+}
+
+
+.ratio a{
+    position:absolute;
+	padding-left:0.2%;
+	color:white;	
+}
+
+@keyframes barAnmi{
+	0%   {width: 0%}
+}
+
+.downBtn{
+	text-decoration:none;
+	color:white;
+	border: 2px solid white; 
+	cursor:pointer;
+	/*background:#17E8E0;*/
+	padding:6px 2%;	
+	margin:0 1%;
+	border-radius:120px; 
+}
+
+.downBtn:hover{
+	background:#F7991D;
+}
+
+#btn1:hover{
+	background:white;
+	color: black;
+}
+
+#btn11:hover{
+	background:white;
+	color: black;
+}
+#btn2:hover{
+	background:#ABC3E3;
+}
+#btn3:hover{
+	background:#FF5E23;
+}
+#btn4:hover{
+	background:#FB9D1A;
+}
+#btn5:hover{
+	background:#E50C0C;
+}
+#btn6:hover{
+	background:#00BDFF;
+}
+#btn7:hover{
+	background:#920784;
+}
+#caption{
+	text-align:center;
+	letter-spacing: 3px;
+	font-size:60px;
+	margin-top:50px;
+	color:#F8A61C;
+} 
+
+#notice{
+	text-align:center;
+	margin:-40px 0 20px 0;
+	color:#C1C1C1;
+} 
+
+.info{
+	/* position:absolute; */
+	width:200px;
+	display: block;
+	margin:100px auto 0 auto;
+}
+
+#author{
+	/* position:absolute; */
+	color:#666666;
+	display: block;
+	text-align:center;
+	margin-bottom:100px;
+	font-size:16px;
+	width:200px;
+}
+
+.ratioLine{
+	height:0px;
+	background:black;
+	position:inherit;
+	font-family:font2;
+
+}
+
+.ratioLineHeight{
+	width:1px;
+	background:#444444;
+	position:parent;
+	margin-left:100%;
+	color:#BBBBBB;
+	font-size: 20px;
+
+}
+
+.floatBtn{
+	position: fixed;	      
+    bottom: 5%;		
+    right: 5%;	
+
+}
+
+
+

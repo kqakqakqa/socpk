@@ -1,0 +1,221 @@
+var arrLength=0;
+var Request = new Object();
+Request = GetRequest();
+var brand;
+
+brand = Request['brand'];
+
+if(brand===undefined){
+	brand="all";
+}
+var btnNum = document.getElementsByClassName('downBtn').length;
+		var btnSize=document.getElementsByClassName('downBtn');
+		var btnFontSize=30000/document.body.clientWidth;
+		for (i=1;i<btnNum;i++){
+			btnSize[i].style.fontSize=btnFontSize+'px';
+		}
+
+	document.getElementById("btn2").style.borderColor='#ABC3E3';
+	document.getElementById("btn3").style.borderColor='#FF5E23';
+	document.getElementById("btn4").style.borderColor='#FB9D1A';
+	document.getElementById("btn5").style.borderColor='#E50C0C'; 
+// 	document.getElementById("btn6").style.borderColor='#00BDFF';
+
+
+
+
+
+function ShowBar(brand){
+	var socLogo,fontColor;
+	
+	for(var socNum=0;socNum<arr.length;socNum++){
+		switch(arr[socNum][0]){
+			case '苹果':
+			socLogo='../LOGO/apple.png';
+			fontColor="#ABC3E3";
+			break;
+			
+			case '高通':
+			socLogo='../LOGO/snapdragon.png';
+			fontColor="#FF5E23";
+			break;
+			
+			
+			case '谷歌':
+			socLogo='../LOGO/google.png';
+			fontColor="#4285F4";
+			break;
+			
+			
+			case '三星':
+			socLogo='../LOGO/samsung.png';
+			fontColor="#00BDFF";
+			break;
+			
+			case '联发科':
+			socLogo='../LOGO/mediatek.png';
+			fontColor="#FB9D1A";
+			break;
+			
+			case '华为':
+			socLogo='../LOGO/huawei.png';
+			fontColor="#E50C0C";
+			break;
+			
+			case '紫光':
+			socLogo='../LOGO/unisoc.png';
+			fontColor="#730567";
+			break;
+			
+			case '英伟达':
+			socLogo='../LOGO/nvidia.png';
+			fontColor="#77B900";
+			break;
+			
+			case '晶晨':
+			socLogo='../LOGO/amlogic.png';
+			fontColor="#153293";
+			break;
+			
+			case '博通':
+			socLogo='../LOGO/broadcom.png';
+			fontColor="#e21736";
+			break;
+		
+		}
+		switch(brand){
+			case 'all':
+			document.getElementById("btn1").style.backgroundColor='white';
+			document.getElementById("btn1").style.color='black';
+			DrawRatioNum(200,brand);
+			
+			break;
+			
+			case '苹果':
+			document.getElementById("btn2").style.backgroundColor='#ABC3E3';
+			document.getElementById("btn2").style.color='white';
+			DrawRatioNum(150,brand);
+			break;
+			
+			
+			case '高通':
+			document.getElementById("btn3").style.backgroundColor='#FF5E23';
+			document.getElementById("btn3").style.color='white';
+			DrawRatioNum(200,brand);
+			break;
+			
+			
+			case '联发科':
+			document.getElementById("btn4").style.backgroundColor='#FB9D1A';
+			document.getElementById("btn4").style.color='white';
+			DrawRatioNum(200,brand);
+			break;
+			
+			case '华为':
+			document.getElementById("btn5").style.backgroundColor='#E50C0C';
+			document.getElementById("btn5").style.color='white';
+			DrawRatioNum(150,brand);
+			break;
+			
+			
+			case '三星':
+			document.getElementById("btn6").style.backgroundColor='#00BDFF';
+			document.getElementById("btn6").style.color='white';
+			DrawRatioNum(150,brand);
+			break;
+		
+			
+		}
+	
+	
+		function DrawRatioNum(maxRatio,brand){
+			var axisNum=document.getElementsByClassName('ratioLineHeight');
+			var axisNumLength=axisNum.length-1;
+			var stepAxis=0;
+			var uboundAll=maxRatio;
+			var maxStepAll=uboundAll/100;
+			var stepAll=uboundAll/axisNumLength;
+			for(i=0;i<axisNumLength+1;i++){
+				axisNum[i].innerHTML='&nbsp;'+stepAxis;
+				stepAxis=stepAxis+stepAll;
+			}
+			if (arr[socNum][0]==brand){
+			document.write(
+				'<tr><td class="socName" style="height:'+60000/document.body.clientWidth+'px;font-size:'+28000/document.body.clientWidth+'px;color:'+fontColor+'">'+arr[socNum][1]+'</td>'+
+				'<td class="logo"><img src='+socLogo+'></td>'+ 
+				'<td><div class="ratioBar" style="height:'+32000/document.body.clientWidth+'px">'+
+				'<div class="ratio" style="font-size:'+31000/document.body.clientWidth+'px;width:'+arr[socNum][2]/maxStepAll+'%"><a>'+arr[socNum][2]+'</a></div></div></td></tr>');
+				arrLength=arrLength+1;	
+		}
+		else{
+			if(brand=='all')
+			document.write(
+				'<tr><td class="socName" style="height:'+60000/document.body.clientWidth+'px;font-size:'+28000/document.body.clientWidth+'px;color:'+fontColor+'">'+arr[socNum][1]+'</td>'+
+				'<td class="logo"><img src='+socLogo+'></td>'+ 
+				'<td><div class="ratioBar" style="height:'+32000/document.body.clientWidth+'px">'+
+				'<div class="ratio" style="font-size:'+31000/document.body.clientWidth+'px;width:'+arr[socNum][2]/maxStepAll+'%"><a>'+arr[socNum][2]+'</a></div></div></td></tr>');
+				arrLength=arrLength+1;	
+		}
+	}
+	
+		
+	}
+	
+	
+}
+
+
+
+function GetRequest() {
+    var url = location.search; 
+    var theRequest = new Object();
+    if (url.indexOf("?") != -1) {
+        var str = url.substr(1);
+        strs = str.split("&");
+        for(var i = 0; i < strs.length; i ++) {
+            theRequest[strs[i].split("=")[0]]=decodeURI(strs[i].split("=")[1]);
+        }
+    }
+    return theRequest;
+} 
+
+function ChangeView(brand){
+    if (brand=='home'){
+        window.location.href='../';
+    }
+    else{
+        window.location.href='?brand='+brand;
+    }
+	
+}
+
+function DrawRatio(){
+    var viewHeight=document.getElementsByClassName('ratioLineHeight');
+    var i;
+        for(i=0;i<viewHeight.length;i++){
+		viewHeight[i].style.height=document.body.offsetHeight -240+'px';
+}
+}
+	
+
+
+function DownloadFigure(fileName){
+
+    var el=document.querySelector("#mainLayout");
+    html2canvas(el,{
+            backgroundColor: "#000000",
+            windowWidth:1500,
+            
+    }).then(canvas => {
+    
+    const link = document.createElement('a'); 
+    const event = new MouseEvent('click'); 
+    link.download = fileName+'.png'; 
+    link.href = canvas.toDataURL(); 
+    link.dispatchEvent(event);
+    });
+ 
+}
+  
+
+	
