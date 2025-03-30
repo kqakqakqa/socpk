@@ -32,6 +32,7 @@ jobs:
           echo https://www.socpk.com/gfx/ >> tmp/urls.txt
           echo https://www.socpk.com/3dmwle/ >> tmp/urls.txt
           echo https://www.socpk.com/log/ >> tmp/urls.txt
+          echo https://www.socpk.com/batlife/ >> tmp/urls.txt
           wget --content-disposition --restrict-file-names=windows --adjust-extension --convert-links --page-requisites --no-parent --reject "*.ttf" --no-host-directories --input-file=tmp/urls.txt --tries=3 --connect-timeout=30 --verbose || true
           rm -rf tmp/
           git config user.name github-actions
