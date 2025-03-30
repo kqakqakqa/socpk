@@ -41,12 +41,6 @@
     /* background: black; */
 }
 
-	@font-face {
-	    font-family:font2;
-	    src: url(https://www.socpk.com/fonts/bahnschrift.ttf);
-	    
-	}
-
 .ratio {
     height: inherit;
 	position:relative;

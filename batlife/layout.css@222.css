@@ -12,6 +12,8 @@
 }
 
 
+
+
 .data{
 	border-collapse: collapse;
 	text-align:center;
@@ -19,16 +21,29 @@
 }
 
 .socName{
-	width:250px;;
+	width:200px;
+	text-align:right;
+	padding-right:10px;
+}
+
+.socName a{
 	text-align:right;
 	color:#BBBBBB;
 	font-family:font2;
+	text-decoration: none;
+}
+
+
+.floatBtn{
+	position: fixed;	      
+    bottom: 5%;		
+    right: 5%;	
+
 }
 
 .logo{
 	width:50px;
 }
-
 
 .logo img{
 	width:55px;
@@ -39,27 +54,58 @@
 
 .ratioBar {
     width: 100%;
-    /* background: black; */
+    text-align: left;
 }
+
+	
 
 .ratio {
     height: inherit;
+	position:relative;
     border-radius: 0 20px 20px 0;
-    background: linear-gradient(to left, #01D2FF , #3A7CD6);
+    background: #1ED76D;
 	animation-name: barAnmi;
 	animation-duration: 1s;
 	transition-timing-function: ease-in;
+	/*background: linear-gradient(to left, #01D2FF , #3A7CD6);*/
+	transition:0.4s;
+	text-align:right;
+	font-family:font2;
+	color: white;
+
+}
+
+.ratio2 {
+    height: inherit;
+    border-radius: 0 20px 20px 0;
+    background: #1ED76D;
+	animation-name: barAnmi;
+	animation-duration: 1s;
+	transition-timing-function: ease-in;
+	/*background: linear-gradient(to right, #000000 , #3A7CD6 20%);*/
 	transition:0.4s;
 	text-align:right;	
 	font-family:font2;
-	
+    
+}
+.ratio2 a{
+    position:absolute;
+	padding-left:5px;
+	text-align: left;
+	color:#FFFFFF;	
+	font-family:font2;
 }
 
-
-.ratio a{
-    position:absolute;
-	padding-left:0.2%;
-	color:white;	 
+.model{
+    padding-top:2px;
+    text-align: left;
+    position: absolute;
+    padding-left:5px;
+    color: #AAAAAA;
+    text-decoration: none;
+    font-family:font2;
+    cursor:pointer;
+    
 }
 
 .downBtn{
@@ -69,67 +115,48 @@
 	cursor:pointer;
 	/*background:#17E8E0;*/
 	padding:6px 2%;	
-	margin:0 1%;
+	margin:0 2%;
 	border-radius:120px; 
+	font-weight: bold;
 		}
-
-
+        	
 .downBtn:hover{
-	background:#397DD6;
+	background:#FFC000;
 }
-#btn11:hover{
-	background:white;
-	color: black;
+
+        	
+.downBtn:hover{
+	background:#FFC000;
 }
 
 #btn1:hover{
-	background:white;
-	color: black;
+	background:#FFC000;
+	/*color: black;*/
 }
 #btn2:hover{
-	background:#ABC3E3;
+	background:#ED7D31;
 }
-#btn3:hover{
-	background:#FF5E23;
-}
-#btn4:hover{
-	background:#FB9D1A;
-}
-#btn5:hover{
-	background:#E50C0C;
-}
-#btn6:hover{
-	background:#00BDFF;
-}
-#btn7:hover{
-	background:#920784;
-}
-
-
-
-
-
 
 @keyframes barAnmi{
 	0%   {width: 0%}
 }
 
-
-
 #caption{
 	text-align:center;
-	font-size:60px;
-	margin-top:50px;
-	color:#00B4FF;
 	letter-spacing: 3px;
-
+	font-size:60px;
+	margin:50px 100px 0 100px;
+	color:#FFFFFF;
+	font-weight: bold;
 } 
 
 #notice{
 	text-align:center;
-	margin:-40px 0 20px 0;
+	margin-top:15px;
 	color:#C1C1C1;
 } 
+
+
 
 .info{
 	/* position:absolute; */
@@ -143,26 +170,19 @@
 	color:#666666;
 	display: block;
 	text-align:center;
-	margin-bottom:  100px ;
+	margin-bottom:100px;
 	font-size:16px;
 	width:200px;
 }
-
-.floatBtn{
-	position: fixed;	      
-    bottom: 5%;		
-    right: 5%;	
-
-}
-
 
 .ratioLine{
 	height:0px;
 	background:black;
 	position:inherit;
 	font-family:font2;
-
+	
 }
+
 
 .ratioLineHeight{
 	width:1px;
@@ -171,7 +191,9 @@
 	margin-left:100%;
 	color:#BBBBBB;
 	font-size: 20px;
+
 }
+
 
 
 

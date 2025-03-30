@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="layout.css@222.css" rel="stylesheet" />	
+<script src="50cl1st.js@22"></script>
+<script src="../html2canvas.min.js"></script>
+
+<link rel="icon" href="../MAINPIC/favicon.ico">
+<title>续航测试</title>
+</head>
+<body id="mainLayout">
+<p class="downBtn"  style="float:left;padding:2px 23px 8px 20px;position:absolute;font-size:40px" data-html2canvas-ignore onclick="ChangeView('home')"><b>&lt;</b></p> 	
+	
+
+	<p id="caption">极客湾5G续航排行榜3.0</p>
+	<p id="notice">均使用自购零售机测试。点击机型或系统版本可观看全程录像</p>	
+	
+	<script src="main.js@e"></script>
+	<table class="data" id="mainForm" border="0" style="margin-top:45px">			
+	<tr >
+		<td class="socName"></td>
+		<td>
+			<div class="ratioBar" style="position:inherit;margin-top:-10px">
+				<div class="ratioLine" style="width:0%;"><div class="ratioLineHeight" style="background:#FFFFFF;">&nbsp;0</div></div>			
+				<div class="ratioLine" style="width:25%;"><div class="ratioLineHeight">&nbsp;240</div></div>
+				<div class="ratioLine" style="width:50%;"><div class="ratioLineHeight">&nbsp;480</div></div>
+				<div class="ratioLine" style="width:75%;"><div class="ratioLineHeight">&nbsp;720</div></div>
+				<div class="ratioLine" style="width:100%;margin-bottom: 30px;"><div class="ratioLineHeight">&nbsp;960</div></div>
+			</div>
+		</td>					
+	</tr>
+	<script>
+	ShowBar(brand);
+	DrawRatio();	
+	</script>
+	</table>
+	<div class="floatBtn">
+		<img data-html2canvas-ignore id="downloadFigure" style="width: 100px;" onclick="DownloadFigure('BATLIFE')" src="../MAINPIC/savefigure.svg">
+	  </div>
+	  	<p id="author"></p>	
+  </body>
+</html>
+
+
+
+
+
+

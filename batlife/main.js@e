@@ -1,0 +1,163 @@
+var arrLength=0;
+var Request = new Object();
+Request = GetRequest();
+var brand = Request['sor'];
+
+function ShowBar(brand){
+	var axisNum=document.getElementsByClassName('ratioLineHeight');
+	var axisNumLength=axisNum.length-1;
+
+	var ubound=720;
+	var maxStep=ubound/100;
+	var step=ubound/axisNumLength;
+
+	var stepAxis=0;
+	for(i=0;i<axisNumLength+1;i++){
+		axisNum[i].innerHTML='&nbsp;'+stepAxis/60;
+		stepAxis=stepAxis+step;
+	}
+
+	var socLogo,ratioColor;
+	
+	for(var socNum=0;socNum<arr.length;socNum++){
+	switch(arr[socNum][0]){
+			
+			case '苹果':
+			ratioColor="#732EE3";
+			break;
+
+			case 'vivo':
+			ratioColor="#3E5BF4";
+			break;
+
+			case '小米':
+			ratioColor="#F46400";
+			break;
+			
+			case 'OPPO':
+			ratioColor="#00CA81";
+			break;
+			
+			case 'iqoo':
+			ratioColor="#F4AC01";
+			break;
+			
+			case '红米':
+			ratioColor="#DF003E";
+			break;
+			
+			case '一加':
+			ratioColor="#E40027";
+			break;
+			
+			case '真我':
+			ratioColor="#F6C318";
+			break;
+			
+			case '荣耀':
+			ratioColor="#01AEE1";
+			break;
+			
+			case '华为':
+			ratioColor="#E12D2C";
+			break;
+			
+			case '红魔':
+			ratioColor="#E61939";
+			break;
+			
+			case '三星':
+			ratioColor="#3E5BF4";
+			break;
+			
+			
+		
+		}
+		if(arr[socNum][6]=='NA'){
+		 document.write(
+			'<tr><td class="socName" style="height:'+60000/document.body.clientWidth+'px;font-size:'+28000/document.body.clientWidth+'px;"><a onclick="ShowAlert()" >'+arr[socNum][1]+'</a></td>'+ 
+			'<td><div class="ratioBar" style="height:'+38000/document.body.clientWidth+'px"><a onclick="ShowAlert()" style="font-size:'+22000/document.body.clientWidth+'px" class="model">&emsp;'+arr[socNum][4]+'mAh('+arr[socNum][5]+'Wh)&emsp;'+arr[socNum][3]+'</a>'+
+			'<div class="ratio2" style="background:linear-gradient(to right, rgba(0, 0, 0, 0),rgba(0, 0, 0, 1) 1%,#000000 1%,'+ratioColor+' 100%);'+'font-size:'+31000/document.body.clientWidth+'px;width:'+arr[socNum][2]/maxStep+'%"><a>'+MinToHor(arr[socNum][2])+'</a></div>'+
+			'</div></td></tr>');  
+		}else{
+		  document.write(
+			'<tr><td class="socName" style="height:'+60000/document.body.clientWidth+'px;font-size:'+28000/document.body.clientWidth+'px;"><a href="'+arr[socNum][6]+'" >'+arr[socNum][1]+'</a></td>'+ 
+			'<td><div class="ratioBar" style="height:'+38000/document.body.clientWidth+'px"><a href="'+arr[socNum][6]+'" style="font-size:'+22000/document.body.clientWidth+'px" class="model">&emsp;'+arr[socNum][4]+'mAh('+arr[socNum][5]+'Wh)&emsp;'+arr[socNum][3]+'</a>'+
+			'<div class="ratio2" style="background:linear-gradient(to right, rgba(0, 0, 0, 0),rgba(0, 0, 0, 1) 1%,#000000 1%,'+ratioColor+' 100%);'+'font-size:'+31000/document.body.clientWidth+'px;width:'+arr[socNum][2]/maxStep+'%"><a>'+MinToHor(arr[socNum][2])+'</a></div>'+
+			'</div></td></tr>');  
+		}
+		arrLength=arrLength+1;				
+		}
+			
+	}
+	
+	
+
+
+
+function GetRequest() {
+    var url = location.search; 
+    var theRequest = new Object();
+    if (url.indexOf("?") != -1) {
+        var str = url.substr(1);
+        strs = str.split("&");
+        for(var i = 0; i < strs.length; i ++) {
+            theRequest[strs[i].split("=")[0]]=decodeURI(strs[i].split("=")[1]);
+        }
+    }
+    return theRequest;
+} 
+
+function ChangeView(brand){
+    if (brand=='home'){
+        window.location.href='../';
+    }
+    else{
+        window.location.href='?sor='+brand;
+    }
+	
+}
+
+function DrawRatio(){
+    var viewHeight=document.getElementsByClassName('ratioLineHeight');
+    var i;
+        for(i=0;i<viewHeight.length;i++){
+			viewHeight[i].style.height=document.body.offsetHeight -140+'px';
+		}
+}
+	
+function DownloadFigure(fileName){				
+    var el=document.querySelector("#mainLayout");
+    html2canvas(el,{
+            backgroundColor: "#000000",
+            windowWidth:1500,
+            
+    }).then(canvas => {
+    
+    const link = document.createElement('a'); 
+    const event = new MouseEvent('click'); 
+    link.download = fileName+'.png'; 
+    link.href = canvas.toDataURL(); 
+    link.dispatchEvent(event);
+    });
+ 
+}
+
+function MinToHor(min) {
+    const hours = Math.floor(min / 60);
+    const minutes = min % 60;
+    
+    const parts = [];
+    if (hours > 0) {
+        parts.push(hours+'h');
+    }
+    if (minutes > 0 || min === 0) {
+        parts.push(minutes+'min');
+    }
+    
+    return parts.join('');
+}
+ function ShowAlert(){
+     alert('该机型录像还在上传中，请稍后再试');
+ }
+  
