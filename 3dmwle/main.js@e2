@@ -98,6 +98,11 @@ function ShowBar(brand){
 			fontColor="#153293";
 			break;
 			
+			case '小米':
+			socLogo='../LOGO/xiaomi.png';
+			fontColor="#FF6900";
+			break;
+			
 			case '博通':
 			socLogo='../LOGO/broadcom.png';
 			fontColor="#e21736";
