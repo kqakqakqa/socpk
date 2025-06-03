@@ -159,7 +159,7 @@ function ShowBar(brand){
 				'<tr><td class="socName" style="height:'+60000/document.body.clientWidth+'px;font-size:'+28000/document.body.clientWidth+'px;color:'+fontColor+'">'+arr[socNum][1]+'</td>'+
 				'<td class="logo"><img src='+socLogo+'></td>'+ 
 				'<td><div class="ratioBar" style="height:'+32000/document.body.clientWidth+'px">'+
-				'<div class="ratio" style="font-size:'+31000/document.body.clientWidth+'px;width:'+arr[socNum][2]/maxStepAll+'%"><a>'+arr[socNum][2]+'</a></div></div></td></tr>');
+				'<div class="ratio" style="font-size:'+31000/document.body.clientWidth+'px;width:'+arr[socNum][2]/maxStepAll+'%"><a>'+arr[socNum][2].toFixed(1)+'</a></div></div></td></tr>');
 				arrLength=arrLength+1;	
 		}
 		else{
@@ -168,7 +168,7 @@ function ShowBar(brand){
 				'<tr><td class="socName" style="height:'+60000/document.body.clientWidth+'px;font-size:'+28000/document.body.clientWidth+'px;color:'+fontColor+'">'+arr[socNum][1]+'</td>'+
 				'<td class="logo"><img src='+socLogo+'></td>'+ 
 				'<td><div class="ratioBar" style="height:'+32000/document.body.clientWidth+'px">'+
-				'<div class="ratio" style="font-size:'+31000/document.body.clientWidth+'px;width:'+arr[socNum][2]/maxStepAll+'%"><a>'+arr[socNum][2]+'</a></div></div></td></tr>');
+				'<div class="ratio" style="font-size:'+31000/document.body.clientWidth+'px;width:'+arr[socNum][2]/maxStepAll+'%"><a>'+arr[socNum][2].toFixed(1)+'</a></div></div></td></tr>');
 			}
 			if(brand=='phone'){
 			    if(!excludeSocArray.find(item => arr[socNum][1].includes(item))) {
@@ -177,7 +177,7 @@ function ShowBar(brand){
 				'<tr><td class="socName" style="height:'+60000/document.body.clientWidth+'px;font-size:'+28000/document.body.clientWidth+'px;color:'+fontColor+'">'+arr[socNum][1]+'</td>'+
 				'<td class="logo"><img src='+socLogo+'></td>'+ 
 				'<td><div class="ratioBar" style="height:'+32000/document.body.clientWidth+'px">'+
-				'<div class="ratio" style="font-size:'+31000/document.body.clientWidth+'px;width:'+arr[socNum][2]/maxStepAll+'%"><a>'+arr[socNum][2]+'</a></div></div></td></tr>');
+				'<div class="ratio" style="font-size:'+31000/document.body.clientWidth+'px;width:'+arr[socNum][2]/maxStepAll+'%"><a>'+arr[socNum][2].toFixed(1)+'</a></div></div></td></tr>');
 			    }
 			    
 			}
