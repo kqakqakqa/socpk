@@ -26,7 +26,6 @@ tr {
 }
 
 .layer{
-    height:100%;
     /*margin-top:10px;*/
     animation-name: barAnmi;
 	animation-duration: 0.1s;
