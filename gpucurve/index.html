@@ -17,11 +17,11 @@
 <p id="notice">*拆机使用Power Monitor + 假电池测量，减实时屏幕功耗得到主板功耗</p>
 <p style="text-align:center"><a style="color:#FFC000;text-decoration:none;padding:8px 12px;border: 2px solid #FFC000; border-radius:30px;" href="../log/index.html">更新日志</a>&nbsp;<a style="color:#FFC000;text-decoration:none;padding:8px 12px;border: 2px solid #FFC000; border-radius:30px;" href="https://www.socpk.com/gpucurve/gfx">查看GFX能效曲线</a></p>
 <div style="position:relative;">
-		<img id='pics'  src="layer/GPU_axis2.svg">
+		<img id='pics'  src="layer/3DMark&#32;Steel&#32;Nomad&#32;Light_asis.svg">
 		
 
 		<img class="layer" name="gpufigure" style="position:absolute;" id="gpus8g3"   src="layer/gpu/3dmark_snl_SD8&#32;Gen3.svg@1">
-		<img class="layer" name="gpufigure" style="position:absolute;" id="gpus8sg3"   src="layer/gpu/3dmark_snl_SD8S&#32;Gen3.svg">
+		<img class="layer" name="gpufigure" style="position:absolute;" id="gpus8sg3"   src="layer/gpu/3dmark_snl_SD8s&#32;Gen3.svg">
 		<img class="layer" name="gpufigure" style="position:absolute;" id="gpus780g" src="layer/gpu/3dmark_snl_SD780G.svg">
 		<img class="layer" name="gpufigure" style="position:absolute;" id="gpus7pg2" src="layer/gpu/3dmark_snl_SD7+&#32;Gen2.svg">
 		<img class="layer" name="gpufigure" style="position:absolute;" id="gpus8g2"  src="layer/gpu/3dmark_snl_SD8&#32;Gen2.svg">
@@ -29,7 +29,6 @@
 		<img class="layer" name="gpufigure" style="position:absolute;" id="gpus8g1"  src="layer/gpu/3dmark_snl_SD8&#32;Gen1.svg">
 		<img class="layer" name="gpufigure" style="position:absolute;" id="gpus888"  src="layer/gpu/3dmark_snl_SD888.svg">
 	
-        <img class="layer" name="gpufigure" style="position:absolute;" id="gpud9400" src="layer/gpu/3dmark_snl_D9400.svg">
         <img class="layer" name="gpufigure" style="position:absolute;" id="gpud9300p" src="layer/gpu/3dmark_snl_D9300+.svg">
 		<img class="layer" name="gpufigure" style="position:absolute;" id="gpud9200p" src="layer/gpu/3dmark_snl_D9200+.svg">
 		<img class="layer" name="gpufigure" style="position:absolute;" id="gpud9000" src="layer/gpu/3dmark_snl_D9000.svg">
@@ -39,6 +38,9 @@
 		<img class="layer" name="gpufigure" style="position:absolute;" id="gpud8100" src="layer/gpu/3dmark_snl_D8100.svg">
         <img class="layer" name="gpufigure" style="position:absolute;" id="gpud1200" src="layer/gpu/3dmark_snl_D1200.svg">
         <img class="layer" name="gpufigure" style="position:absolute;" id="gpuk9020" src="layer/gpu/3dmark_snl_K9020.svg">
+        
+        <img class="layer" name="gpufigure" style="position:absolute;" id="gpua19"  src="layer/gpu/3dmark_snl_A19.svg">
+        <img class="layer" name="gpufigure" style="position:absolute;" id="gpua19p"  src="layer/gpu/3dmark_snl_A19&#32;Pro.svg">
  
  
  		<img class="layer" name="gpufigure" style="position:absolute;" id="gpua18"  src="layer/gpu/3dmark_snl_A18.svg">
@@ -71,52 +73,52 @@
     
 	<hr style="width:90%;margin-right:10%">
 	<p style="color:white;font-size:30px;margin-bottom:3px">高通骁龙旗舰</p>
-	<button class="btnSwitch" name="gpu"  id="gpus8e_9600btn" style="border-color:#79f2f2 ;" onclick="ChangeView('gpus8e_9600')">
+	<button class="btnSwitch" name="gpu"  id="gpus8e_9600btn" style="border-color:#79DEF2 ;" onclick="ChangeView('gpus8e_9600')">
 		<b style="font-size: 20px;">8 Elite</b> 
 		<a class="btnModule">红魔10Pro+</a>
 		<br>
 		<a class="btnModule">LPDDR5X 9600 / 台积电3nm</a>
 	</button>
-		<button class="btnSwitch" name="gpu"  id="gpus8e_8533btn" style="border-color:#30d2f2 ;" onclick="ChangeView('gpus8e_8533')">
+		<button class="btnSwitch" name="gpu"  id="gpus8e_8533btn" style="border-color:#30B2F2 ;" onclick="ChangeView('gpus8e_8533')">
 		<b style="font-size: 20px;">8 Elite</b> 
 		<a class="btnModule">一加13</a>
 		<br>
 		<a class="btnModule">LPDDR5X 8533 / 台积电3nm</a>
 	</button> 
-	<button class="btnSwitch" name="gpu"  id="gpus8sg3btn" style="border-color:#79DEF2 ;" onclick="ChangeView('gpus8sg3')">
+	<button class="btnSwitch" name="gpu"  id="gpus8sg3btn" style="border-color:#79CAF2 ;" onclick="ChangeView('gpus8sg3')">
 		<b style="font-size: 20px;">骁龙8s Gen3</b> 
 		<a class="btnModule">红米Turbo 3</a>
 		<br>
 		<a class="btnModule">LPDDR5X 8533 / 台积电4nm</a>
 	</button> 
-    <button class="btnSwitch" name="gpu"  id="gpus8g3btn" style="border-color:#30f2f2 ;" onclick="ChangeView('gpus8g3')">
+    <button class="btnSwitch" name="gpu"  id="gpus8g3btn" style="border-color:#3091F2 ;" onclick="ChangeView('gpus8g3')">
 		<b style="font-size: 20px;">骁龙8 Gen3</b> 
 		<a class="btnModule">小米14</a>
 		<br>
 		<a class="btnModule">LPDDR5X 8533 / 台积电4nm</a>
 	</button> 
 
-<button class="btnSwitch" name="gpu"  id="gpus8g2btn" style="border-color:#79f2f2 ;" onclick="ChangeView('gpus8g2')">
+<button class="btnSwitch" name="gpu"  id="gpus8g2btn" style="border-color:#79B6F2 ;" onclick="ChangeView('gpus8g2')">
 		<b style="font-size: 20px;">8 Gen2</b> 
 		<a class="btnModule">小米13</a>
 		<br>
 		<a class="btnModule">LPDDR5X 8533 / 台积电4nm</a>
 	</button> 
 
-	<button class="btnSwitch" name="gpu"  id="gpus8pbtn" style="border-color: #30d2f2;" onclick="ChangeView('gpus8p')">
+	<button class="btnSwitch" name="gpu"  id="gpus8pbtn" style="border-color: #3071F2;" onclick="ChangeView('gpus8p')">
 		<b style="font-size: 20px;">8+</b>
 		<a class="btnModule">拯救者y70</a>
 		<br>
 		<a class="btnModule">LPDDR5 6400 / 台积电4nm</a>
 	</button>
 	
-	<button class="btnSwitch" name="gpu"  id="gpus8g1btn" style="border-color: #79def2;" onclick="ChangeView('gpus8g1')">
+	<button class="btnSwitch" name="gpu"  id="gpus8g1btn" style="border-color: #79A1F2;" onclick="ChangeView('gpus8g1')">
 		<b style="font-size: 20px;">8 Gen1</b>
 		<a class="btnModule">Moto edge X30</a>
 		<br>
 		<a class="btnModule">LPDDR5 6400 / 三星4nm</a>
 	</button>
-	<button class="btnSwitch" name="gpu"  id="gpus888btn" style="border-color: #30b2f2;" onclick="ChangeView('gpus888')">
+	<button class="btnSwitch" name="gpu"  id="gpus888btn" style="border-color: #3051F2;" onclick="ChangeView('gpus888')">
 		<b style="font-size: 20px;">888</b>
 		<a class="btnModule">中兴A31 Pro</a>
 		<br>
@@ -125,7 +127,7 @@
 	
 <p style="color:white;font-size:30px;margin-bottom:3px">高通骁龙中/高端</p>
 
-	<button class="btnSwitch" name="gpu"  id="gpus7pg2btn" style="border-color: #79caf2;" onclick="ChangeView('gpus7pg2')">
+	<button class="btnSwitch" name="gpu"  id="gpus7pg2btn" style="border-color: #798DF2;" onclick="ChangeView('gpus7pg2')">
 		<b style="font-size: 20px;">7+ Gen2</b>
 		<a class="btnModule">红米Note12 Turbo</a>
 		<br>
@@ -133,7 +135,7 @@
 	</button>
 	
 
-	<button class="btnSwitch" name="gpu"  id="gpus780gbtn" style="border-color: #3091f2;" onclick="ChangeView('gpus780g')">
+	<button class="btnSwitch" name="gpu"  id="gpus780gbtn" style="border-color: #3030F2;" onclick="ChangeView('gpus780g')">
 		<b style="font-size: 20px;">780G</b>
 		<a class="btnModule">小米11青春版</a>
 		<br>
@@ -146,50 +148,50 @@
 	
 <p style="color:white;font-size:30px;margin:30px 0 3px 10px">联发科天玑旗舰</p>
 
-<button class="btnSwitch" name="gpu"  id="gpud9400_10667btn" style="border-color: #f25130;" onclick="ChangeView('gpud9400_10667')">
+<button class="btnSwitch" name="gpu"  id="gpud9400_10667btn" style="border-color: #F27979;" onclick="ChangeView('gpud9400_10667')">
 		<b style="font-size: 20px;">9400</b>
 		<a class="btnModule">OPPO Find X8 Pro</a>
 		<br>
 		<a class="btnModule">LPDDR5X 10667 / 台积电3nm</a>
 	</button> 
-	<button class="btnSwitch" name="gpu"  id="gpud9400_8533btn" style="border-color: #f27979;" onclick="ChangeView('gpud9400_8533')">
+	<button class="btnSwitch" name="gpu"  id="gpud9400_8533btn" style="border-color: #F28D79;" onclick="ChangeView('gpud9400_8533')">
 		<b style="font-size: 20px;">9400</b>
 		<a class="btnModule">VIVO X200 Pro</a>
 		<br>
 		<a class="btnModule">LPDDR5X 8533 / 台积电3nm</a>
 	</button> 
-    <button class="btnSwitch" name="gpu"  id="gpud9300pbtn" style="border-color: #f27130;" onclick="ChangeView('gpud9300p')">
+    <button class="btnSwitch" name="gpu"  id="gpud9300pbtn" style="border-color: #F2B679;" onclick="ChangeView('gpud9300p')">
 		<b style="font-size: 20px;">9300+</b>
 		<a class="btnModule">红米K70至尊版</a>
 		<br>
 		<a class="btnModule">LPDDR5X 8533 / 台积电4nm</a>
 	</button> 
-	    <button class="btnSwitch" name="gpu"  id="gpud9200pbtn" style="border-color: #f2a179;" onclick="ChangeView('gpud9200p')">
+	    <button class="btnSwitch" name="gpu"  id="gpud9200pbtn" style="border-color: #F2B230;" onclick="ChangeView('gpud9200p')">
 		<b style="font-size: 20px;">9200+</b>
 		<a class="btnModule">红米K60至尊版</a>
 		<br>
 		<a class="btnModule">LPDDR5X 8533 / 台积电4nm</a>
 	</button> 
-	<button class="btnSwitch" name="gpu"  id="gpud9000btn" style="border-color: #f29130;" onclick="ChangeView('gpud9000')">
+	<button class="btnSwitch" name="gpu"  id="gpud9000btn" style="border-color: #F2CA79;" onclick="ChangeView('gpud9000')">
 		<b style="font-size: 20px;">9000</b>
 		<a class="btnModule">红米K50 Pro</a>
 		<br>
 		<a class="btnModule">LPDDR5 6400 / 台积电4nm</a>
 	</button>
 <p style="color:white;font-size:30px;margin:30px 0 3px 10px">联发科天玑高端</p>	
-    <button class="btnSwitch" name="gpu"  id="gpud8400maxbtn" style="border-color: #F2CA79 ;" onclick="ChangeView('gpud8400max')">
+    <button class="btnSwitch" name="gpu"  id="gpud8400maxbtn" style="border-color: #F2DE79 ;" onclick="ChangeView('gpud8400max')">
 		<b style="font-size: 20px;">8400-MAX</b>
 		<a class="btnModule">真我Neo7 SE</a>
 		<br>
 		<a class="btnModule">LPDDR5X 8533 / 台积电4nm</a>
 	</button>
-    <button class="btnSwitch" name="gpu"  id="gpud8300ubtn" style="border-color: #f28d79 ;" onclick="ChangeView('gpud8300u')">
+    <button class="btnSwitch" name="gpu"  id="gpud8300ubtn" style="border-color: #F29130 ;" onclick="ChangeView('gpud8300u')">
 		<b style="font-size: 20px;">8300Ultra</b>
 		<a class="btnModule">红米K70E</a>
 		<br>
 		<a class="btnModule">LPDDR5X 8533 / 台积电4nm</a>
 	</button>
-	<button class="btnSwitch" name="gpu"  id="gpud8200btn" style="border-color: #f2b679 ;" onclick="ChangeView('gpud8200')">
+	<button class="btnSwitch" name="gpu"  id="gpud8200btn" style="border-color: #F2F230 ;" onclick="ChangeView('gpud8200')">
 		<b style="font-size: 20px;">8200</b>
 		<a class="btnModule">红米K60E</a>
 		<br>
@@ -197,14 +199,14 @@
 	</button> 
 	
 	
-	<button class="btnSwitch" name="gpu"  id="gpud8100btn" style="border-color: #f2b230 ;" onclick="ChangeView('gpud8100')">
+	<button class="btnSwitch" name="gpu"  id="gpud8100btn" style="border-color: #F2F279 ;" onclick="ChangeView('gpud8100')">
 		<b style="font-size: 20px;">8100</b>
 		<a class="btnModule">红米K50</a>
 		<br>
 		<a class="btnModule">LPDDR5 6400 / 台积电5nm</a> 
 	</button> 
 		<p style="color:white;font-size:30px;margin:30px 0 3px 10px">联发科天玑中/低端</p>
-	<button class="btnSwitch" name="gpu"  id="gpud1200btn" style="border-color: #f2ca79 ;" onclick="ChangeView('gpud1200')">
+	<button class="btnSwitch" name="gpu"  id="gpud1200btn" style="border-color: #D2F230 ;" onclick="ChangeView('gpud1200')">
 		<b style="font-size: 20px;">1200(8050)</b>
 		<a class="btnModule">红米K40G</a> 
 		<br>
@@ -240,19 +242,31 @@
 <br><br><hr style="width:90%;margin-right:10%">
 
 <p style="color:white;font-size:30px;margin:30px 0 3px 10px">苹果</p>
-<button class="btnSwitch"  name="gpu" id="gpua18pbtn" style="border-color: #ccff33;" onclick="ChangeView('gpua18p')">
+<button class="btnSwitch"  name="gpu" id="gpua19pbtn" style="border-color: #CCFF33;" onclick="ChangeView('gpua19p')">
+		<b style="font-size: 20px;">A19 Pro</b>
+		<a class="btnModule">iPhone 17 Pro Max</a>
+		<br>
+		<a class="btnModule">LPDDR5X 9600 / 台积电3nm</a>
+	</button>
+	<button class="btnSwitch"  name="gpu" id="gpua19btn" style="border-color: #BFFF80;" onclick="ChangeView('gpua19')">
+		<b style="font-size: 20px;">A19</b>
+		<a class="btnModule">iPhone 17</a>
+		<br>
+		<a class="btnModule">LPDDR5X 8533 / 台积电3nm</a>
+	</button>
+<button class="btnSwitch"  name="gpu" id="gpua18pbtn" style="border-color: #66FF33;" onclick="ChangeView('gpua18p')">
 		<b style="font-size: 20px;">A18 Pro</b>
 		<a class="btnModule">iPhone 16 Pro Max</a>
 		<br>
 		<a class="btnModule">LPDDR5X 7500 / 台积电3nm</a>
 	</button>
-<button class="btnSwitch"  name="gpu" id="gpua18btn" style="border-color: #bfff80;" onclick="ChangeView('gpua18')">
+<button class="btnSwitch"  name="gpu" id="gpua18btn" style="border-color: #33FF66;" onclick="ChangeView('gpua18')">
 		<b style="font-size: 20px;">A18</b>
 		<a class="btnModule">iPhone 16 Plus</a>
 		<br>
 		<a class="btnModule">LPDDR5X 7500 / 台积电3nm</a>
 	</button>
-<button class="btnSwitch"  name="gpu" id="gpua17pbtn" style="border-color: #66ff33;" onclick="ChangeView('gpua17p')">
+<button class="btnSwitch"  name="gpu" id="gpua17pbtn" style="border-color: #80FFBF;" onclick="ChangeView('gpua17p')">
 		<b style="font-size: 20px;">A17 Pro</b>
 		<a class="btnModule">iPhone 15 Pro</a>
 		<br>
