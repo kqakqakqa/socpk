@@ -1,0 +1,40 @@
+var arr = [
+    
+['苹果','苹果 iPhone 15 Pro',350,'iOS 18.3.2','额定3274',12.7,'https://www.bilibili.com/video/BV1xZZHYdEyp/?spm_id_from=333.999.0.0'],
+['苹果','苹果 iPhone 15 Pro Max',462,'iOS 18.3.2','额定4422',17.11,'NA'],
+['苹果','苹果 iPhone 16',407,'iOS 18.3.1','额定3561',13.84,'https://www.bilibili.com/video/BV1KkoDYiEYC'],
+['苹果','苹果 iPhone 16 Pro',390,'iOS 18.3.1','额定3582',13.94,'https://www.bilibili.com/video/BV1PmoDYAEnf'],
+['苹果','苹果 iPhone 16 Pro Max',514,'iOS 18.3.1','额定4685',18.17,'https://www.bilibili.com/video/BV1y1oDYeEGA'],
+['苹果','苹果 iPhone 16 Plus',526,'iOS 18.3.1','额定4674',18.11,'https://www.bilibili.com/video/BV1s1oDYeEEg'],
+['苹果','苹果 iPhone 16e',467,'iOS 18.3.1','额定4005',15.57,'https://www.bilibili.com/video/BV11PZsY8Eh5'],
+['vivo','vivo X200Pro Mini',604,'OriginOS 15.0.18.38','典型5700',21.24,'NA'],
+['vivo','vivo X200 Pro',595,'OriginOS 15.0.18.17','典型6000',22.53,'https://www.bilibili.com/video/BV1G5fFY6EKU'],
+['vivo','vivo X100',476,'OriginOS 15.1.15.1','典型5000',19.09,'https://www.bilibili.com/video/BV1eJfPYXE5Z'],
+['vivo','vivo X100s',417,'OriginOS 15.1.15.1','典型5100',19.13,''],
+['vivo','vivo X200',611,'OriginOS 15.0.16.7','典型5800',21.87,'https://www.bilibili.com/video/BV125Z9YLE9u'],
+['iqoo','iQOO 13',622,'OriginOS 15.0.21.16','典型6150',22.97,'https://www.bilibili.com/video/BV1ZuZ8YhEHg'],
+['iqoo','iQOO Neo10 Pro',631,'OriginOS 15.0.13.1','典型6100',22.89,'https://www.bilibili.com/video/BV1SfZxYrEUu'],
+['小米','小米 13',393,'HyperOS 2.0.104.0','典型4500',17,'https://www.bilibili.com/video/BV1QmZHYYE5t'],
+['小米','小米 14',454,'HyperOS 2.0.104.0','典型4610',17.38,'https://www.bilibili.com/video/BV1AUoDYaEaV'],
+['小米','小米 15',573,'HyperOS 2.0.101.0','典型5400',20.26,'https://www.bilibili.com/video/BV1wQoDY8EPC'],
+['小米','小米 15 Pro',614,'HyperOS 2.0.107.0','典型6100',22.95,'https://www.bilibili.com/video/BV1ywZ1YHEiU'],
+['小米','小米 15 Ultra',596,'HyperOS 2.0.107.0','典型6000',22.33,'https://www.bilibili.com/video/BV1QWZaYfE9f'],
+['红米','Redmi K80 Pro',560,'HyperOS 2.0.105.0','典型6000',22.62,'https://www.bilibili.com/video/BV1gXZGYuE9F'],
+['OPPO','OPPO Find X8 Pro',587,'ColorOS 15.0.0.501','典型5910',22.33,'https://www.bilibili.com/video/BV1WgZ4YPEf3'],
+['OPPO','OPPO Find X8',579,'ColorOS 15.0.0.505','典型5630',21.25,'https://www.bilibili.com/video/BV1U8ZaYREX2'],
+['一加','一加 Ace5 Pro',670,'ColorOS 15.0.0.501','典型6100',22.76,'https://www.bilibili.com/video/BV1gWZEYpEJi'],
+['一加','一加 13',606,'ColorOS 15.0.0.500','典型6000',22.31,'https://www.bilibili.com/video/BV12LZ9YyETM'],
+['真我','真我 GT7 Pro ',619,'RealmeUI 15.0.0.222','典型6500',24.11,'https://www.bilibili.com/video/BV1JtfNYKE9y'],
+['荣耀','荣耀 Magic7',616,'Magic OS 9.0.0.157','典型5650',21.21,'https://www.bilibili.com/video/BV1ntfNYKEiB'],
+['荣耀','荣耀 Magic7 Pro',609,'Magic OS 9.0.0.165','典型5850',21.97,'https://www.bilibili.com/video/BV1uXZyYbEmh'],
+['华为','华为 Mate 60 Pro',419,'Harmony OS 4.2.0.168','典型5000',19.15,'https://www.bilibili.com/video/BV1QpfPYSE1K'],
+['华为','华为 Mate 70 Pro+',584,'Harmony OS 4.3.0.160','典型5700',21.34,'https://www.bilibili.com/video/BV16PZEYKEa9'],
+['红魔','红魔 10 Pro+',641,'RedMagic OS 10.0.20MR','典型7050',26.5,'https://www.bilibili.com/video/BV1cbZHY2EN6'],
+['三星','三星 S25',451,'OneUI 7.0','典型4000',15.16,'https://www.bilibili.com/video/BV1MaZaYsEB2'],
+['三星','三星 S25+',478,'OneUI 7.0','典型4900',18.45,'https://www.bilibili.com/video/BV1UaZaYWExh'],
+['三星','三星 S25 Ultra',509,'OneUI 7.0','典型5000',18.84,'https://www.bilibili.com/video/BV1UaZaYWEB6'],
+
+];
+
+function SortData(x,y){return y[2] - x[2];}
+arr.sort(SortData);
